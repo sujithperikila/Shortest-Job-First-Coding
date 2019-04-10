@@ -27,7 +27,7 @@ void CalculateWaitingTime(ProcessTable processindex[], int n, int wt[])
 		// Find process with minimum remaining time among the processes that arrives till the current time
 		for (int j = 0; j < n; j++) { 
 			if ((processindex[j].arrival_time <= t) && (copyb[j] < minimumof) && copyb[j] > 0) 
-			{ 
+			{ a
 				minimumof = copyb[j]; 
 				smallest = j; 
 				crosscheck = true; 
@@ -121,4 +121,3 @@ int main()
 	CalculateAverage(processindex, n); 
 	return 0; 
 } 
-
